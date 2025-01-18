@@ -3,7 +3,7 @@ dotenv.config();
 
 import User from '../models/usersModel'
 import { Request, Response, RequestHandler } from 'express';
-const { createPostSchema } = require('../middlewares/validator');
+import { createPostSchema } from '../middlewares/validator'
 import Post from '../models/postsModel'
 
 export const getPosts = async (req: Request, res: Response): Promise<void> => {
